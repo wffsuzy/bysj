@@ -1,0 +1,49 @@
+<extend name="Public/base"/>
+<block name="content">
+		<div id="content">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<form action="{}" method="post" class="form-horizontal">
+							<div class="control-group">
+								<label class="control-label">模块名称</label>
+								<div class="controls">
+									<input type="text" class="input-large" name="title" id="title" />
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">排序</label>
+								<div class="controls">
+									<input type="text" class="input-large" name="list_order"  id="list_order" />
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">链接</label>
+								<div class="controls">
+									<input type="text" class="input-large" name="url" id="url" />
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label">上级模块</label>
+								<div class="controls">
+									<select id="pid">
+										<option>顶级模块</option>
+										<option>用户管理</option>
+										<option>资金管理</option>
+										<option>贷款管理</option>
+										<option>模块管理</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-actions">
+								<button type="button" id="btn-submit"class="btn btn-success"></i>确定</button>
+								<button type="button" id="btn-submit" class="btn btn-success" onclick="javascript:history.back(-1);return false;"></i>返回</button>
+								<button type="reset" class="btn btn-warning">重置</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</block>

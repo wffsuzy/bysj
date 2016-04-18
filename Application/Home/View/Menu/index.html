@@ -1,0 +1,46 @@
+<extend name="Public/base"/>
+<block></block>
+<block name="content">
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="span12">
+					<section id="tables">
+						<a href="{:U('add')}" class="btn btn-success">
+							添加
+						</a>
+						<hr>
+					</section>
+					<table class="table table-bordered table-striped table-highlight">
+						<thead>
+							<tr>
+								<th>#</th>
+								<th>模块名称</th>
+								<th>上级模块</th>
+								<th>路由</th>
+								<th>排序</th>
+								<th>操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						<volist name="menu_list" id="vo">
+							<tr>
+								<td>{$vo.id}</td>
+								<td>{$vo.title}</td>
+								<td>{$vo.parent_menu_name}</td>
+								<td>{$vo.url}</td>
+								<td>{$vo.list_order}</td>
+								 <td style="text-align: center;">
+                                    <a href="/manager-dep/manager/index.php/Admin/Menu/edit/id/1.html" class="btn btn-info">编辑</a>
+                                    <a href="javascript:void(0);" class="btn btn-danger del" url="/manager-dep/manager/index.php/Admin/Menu/del_menu/id/1.html">删除</a>
+                                </td>
+							</tr>
+						</volist>
+		
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>

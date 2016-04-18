@@ -1,0 +1,79 @@
+<extend name="Public/base"/>
+<block name="style"></block>
+<block name="content">
+    <div id="content">
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="span12">
+
+                    <form action="{:U(MODULE_NAME.'/Admin/write_data')}" method="post" id="contact-form" class="form-horizontal" novalidate="novalidate">
+                        <fieldset>
+                            <div class="control-group">
+                                <label class="control-label" for="admin_name">管理员名称</label>
+                                <div class="controls">
+                                    <input type="text" class="input-large" name="admin_name" id="admin_name" placeholder="管理员名称">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="password">登录密码</label>
+                                <div class="controls">
+                                    <input type="password" class="input-large" name="password" id="password" placeholder="登录密码">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="repassword">校验密码<span style="color: grey;font-weight: normal;">(与第一次相同)</label>
+                                <div class="controls">
+                                    <input type="password" class="input-large" name="repassword" id="repassword" placeholder="重复密码">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="tel">联系方式<span style="color: grey;font-weight: normal;">(可选)</span></label>
+                                <div class="controls">
+                                    <input type="tel" class="input-large" name="tel" id="tel" placeholder="联系方式">
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="admin_group_id">所属管理组</label>
+                                <div class="controls">
+                                    <select id="admin_group_id" name="admin_group_id">
+                                        <volist name="groups" id="vo">
+                                            <option value="{$vo.id}" <?php if($info['admin_group_id'] == $vo['id']) echo 'selected';?> >{$vo.group_name}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </div>
+                          	
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-success " id="submit_btn">确定 </button>
+                                <button type="button" class="btn btn-success " onclick="javascript:history.back(-1);return false;"> 返回 </button>
+                                <button type="reset" class="btn btn-tertiary">重置</button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div> <!-- /.span12 -->
+
+            </div> <!-- /.row -->
+
+        </div> <!-- /.container -->
+
+    </div> <!-- /#content -->
+
+    </div> <!-- /#wrapper -->
+</block>
+<block name="script">
+    <script src="__JS__/plugins/validate/jquery.validate.js"></script>
+    <script src="__JS__/admin/admin.add.validation.js"></script>
+    <script src="__JS__/admin/Admin.js"></script>
+    <script>
+        $(function () {
+            Theme.init ();
+            Admin.init ();
+        });
+    </script>
+</block>

@@ -1,0 +1,76 @@
+<extend name="Public/base"/>
+<block name="style"></block>
+<block name="content">
+    <div id="content">
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="span12">
+
+                        <form action="{:U(MODULE_NAME . '/Admin/write_data')}" method="post" id="contact-form" class="form-horizontal" novalidate="novalidate">
+                        <fieldset>
+                            <div class="control-group">
+                                <label class="control-label" for="admin_name">管理员名称</label>
+                                <div class="controls">
+                                    <input type="text" class="input-large" name="admin_name" id="admin_name" value="{$info.admin_name}" required="">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="tel">联系方式</label>
+                                <div class="controls">
+                                    <input type="tel" class="input-large" name="tel" id="tel" value="{$info.tel}">
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label" for="admin_group_id">所属管理组</label>
+                                <div class="controls">
+                                    <select id="admin_group_id" name="admin_group_id">
+                                        <volist name="groups" id="vo">
+                                            <option value="{$vo.id}" <?php if($info['admin_group_id'] == $vo['id']) echo 'selected';?>>{$vo.group_name}</option>
+                                        </volist>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">是否启用<span style="color: grey;font-weight: normal;">(默认禁用)</span></label>
+                                <div class="controls">
+                                    <label class="radio">
+                                        <input type="radio"  name="enable" value="1" <?php if($info['enable'] == 1) echo 'checked';?>/> 启用
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio"  name="enable" value="0" <?php if($info['enable'] == 0) echo 'checked';?> /> 禁用
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <input type="hidden" name="id" value="{$info.id}">
+                                <button type="button" class="btn btn-success " id="submit_btn_sure"><i class="icon-star"></i> 确定 </button>
+                                <button type="button" class="btn btn-success " onclick="javascript:history.back(-1);return false;"><i class="icon-star"></i> 返回 </button>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div> <!-- /.span12 -->
+
+            </div> <!-- /.row -->
+
+        </div> <!-- /.container -->
+
+    </div> <!-- /#content -->
+
+    </div> <!-- /#wrapper -->
+</block>
+<block name="script">
+    <script src="__JS__/plugins/validate/jquery.validate.js"></script>
+    <script src="__JS__/admin/admin.add.validation.js"></script>
+    <script src="__JS__/admin/Admin.js"></script>
+    <script>
+        $(function () {
+            Theme.init ();
+            Admin.init ();
+        });
+    </script>
+</block>

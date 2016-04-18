@@ -1,0 +1,51 @@
+<extend name="Public/base"/>
+<block name="style">
+
+</block>
+<block name="content">
+    <div id="content">
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <form action="{:U('write_data')}" method="post" class="form-horizontal">
+                        <div class="control-group">
+                            <label class="control-label">冻结:</label>
+                            <div class="controls" style="padding-top: 5px">
+                                是&nbsp;&nbsp;<input type="radio" class="input-large" name="status"  value="0" <?php if($info['status']==0) echo 'checked'?> style="margin-right: 20px">
+                                否&nbsp;&nbsp;<input type="radio" class="input-large" name="status" value="1" <?php if($info['status']==1) echo 'checked'?> />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">登录密码:</label>
+                            <div class="controls" >
+                                <input type="password" class="input-large" name="password"  />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">支付密码:</label>
+                            <div class="controls">
+                                <input type="password" class="input-large" name="pay_password"  />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">手机号:</label>
+                            <div class="controls">
+                                <input type="text" class="input-large" name="phone" value="{$info.phone}"/>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">邮箱:</label>
+                            <div class="controls">
+                                <input type="text" class="input-large" name="e-mail" value="{$info.e-mail}"  />
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" id="btn-submit"class="btn btn-success"></i>确定</button>
+                            <button type="button"  class="btn btn-success" onclick="javascript:history.back(-1);return false;"></i>返回</button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </div>
+</block>

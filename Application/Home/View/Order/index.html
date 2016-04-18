@@ -1,0 +1,61 @@
+<extend name="Public/base"/>
+<block name="style">
+	<style>
+	.search input{
+		margin-top:5px;
+	}
+	
+	.search label{
+		display:inline-block;
+		margin-left:15px;
+	}
+	</style>
+</block>
+<block name="content">
+	<div id="content">
+		<div class="container">
+			<div class="row">
+				<div class="span12 search">
+					<form action="{:U('index')}" method="get">
+						<h4 style="color:deepskyblue">
+							<i class="icon-record"></i>
+							  筛选条件
+						</h4>
+						<label>
+							  用户ID:
+							  <input type="text" placeholder="用户">
+						</label>
+						<label>
+							标的类型
+							<select id="order_type">
+								<option>信用标</option>
+								<option>担保标</option>
+							</select>
+						</label>
+						<label>
+							状态
+							<select id="status">
+								<option>还款中</option>
+							</select>
+						</label>
+						<label>
+							还款期:
+							<select id="time">
+								<option>三个月</option>
+							</select>
+						</label>
+						<label>
+							还款期:
+							<select id="time">
+								<option>三个月</option>
+							</select>
+						</label>
+						<label>
+							<input type="submit" class="btn btn-success" value="搜索" style="margin-top:-8px"/>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</block>

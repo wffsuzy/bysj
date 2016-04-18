@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<title>{$site_title}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="__CSS__/favicon.ico"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="__CSS__/font-awesome.css">         <!-- 图标 3.0 -->
+	<link rel="stylesheet" href="__CSS__/font-awesome.min.css">         <!-- 图标 4.4 -->
+	<link rel="stylesheet" href="__CSS__/bootstrap.css">
+	<link rel="stylesheet" href="__CSS__/bootstrap-responsive.css">
+	<link rel="stylesheet" href="__CSS__/ui-lightness/jquery-ui-1.8.21.custom.css">
+	<link rel="stylesheet" href="__CSS__/application.css"> <!-- 页面CSS -->
+    <link href="__JS__/plugins/msgGrowl/css/msgGrowl.css" rel="stylesheet">
+	<link href="__JS__/plugins/msgbox/jquery.msgbox.css" rel="stylesheet">
+	<link href="__JS__/plugins/lightbox/themes/evolution-dark/jquery.lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="__CSS__/pages/dashboard.css">
+	<script src="__JS__/libs/modernizr-2.5.3.min.js"></script>
+    <block name="style"></block>
+</head>
+
+<body>
+<div id="wrapper">
+<div id="topbar">
+	<div class="container">
+		<a href="javascript:;" id="menu-trigger" class="dropdown-toggle" data-toggle="dropdown" data-target="#">
+			<i class="icon-cog"></i>
+		</a>
+		<div id="top-nav">
+			<ul>
+				<li><a href="javascript:;">小西网络</a></li>
+			</ul>
+			<ul class="pull-right">
+				<li><a href="javascript:;"><i class="icon-user"></i>&nbsp;{$admin_info['admin_name']}</a></li>
+				<li><a href="{:U(MODULE_NAME . '/Public/logout')}">退出</a></li>
+			</ul>
+		</div> <!-- /#top-nav -->
+	</div> <!-- /.container -->
+</div> <!-- /#topbar -->
+<div id="header">
+	<div class="container">
+		<a href="{:U(MODULE_NAME . '/Index/index')}" class="brand">首页</a>
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="icon-reorder"></i>
+      	</a>
+		<div class="nav-collapse">
+			<ul id="main-nav" class="nav pull-right">
+				<li class="nav-icon <?php if($index) echo 'active';?>">
+					<a href="{:U(MODULE_NAME . '/Index/index')}">
+						<i class="icon-home"></i>
+						<span>首页</span>        					
+					</a>
+				</li>
+                <volist name="__MENU__" id="menu">
+                    <li class="dropdown <?php if($menu['active']) echo 'active';?>">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-th"></i>
+                            <span>{$menu.title}</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <volist name="menu['child']" id="m">
+                                <li class="dropdown-submenu">
+                                    <a tabindex="-1" href="#">{$key}</a>
+                                    <ul class="dropdown-menu">
+                                        <volist name="m" id="v">
+                                            <li><a tabindex="-1" href="{$v.url|U}">{$v.title}</a></li>
+                                        </volist>
+                                    </ul>
+                                </li>
+                            </volist>
+                        </ul>
+                    </li>
+                </volist>
+			</ul>
+		</div> <!-- /.nav-collapse -->
+	</div> <!-- /.container -->
+</div> <!-- /#header -->
+
+<!--<div id="masthead" >-->
+
+<!--</div> &lt;!&ndash; /#masthead &ndash;&gt;-->
+<block name="content"></block>
+</div> <!-- /#wrapper -->
+<div id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="span6">
+				© 2014 南京小西网络科技有限公司.
+                &nbsp;&nbsp;-- 天行健,君子以自强不息;地势坤,君子以厚德载物.
+			</div> <!-- /span6 -->
+			<div id="builtby" class="span6">
+				<a href="#">By Henly</a>
+			</div> <!-- /.span6 -->
+		</div> <!-- /row -->
+	</div> <!-- /container -->
+</div> <!-- /#footer -->
+<script src="__JS__/libs/jquery-1.7.2.min.js"></script>
+<script src="__JS__/plugins/layer/layer.js"></script>
+<script src="__JS__/libs/jquery-ui-1.8.21.custom.min.js"></script>
+<script src="__JS__/libs/jquery.ui.touch-punch.min.js"></script>
+<script src="__JS__/libs/bootstrap/bootstrap.min.js"></script>
+<script src="__JS__/plugins/msgGrowl/js/msgGrowl.js"></script>
+<script src="__JS__/plugins/msgbox/jquery.msgbox.min.js"></script>
+<script src="__JS__/plugins/lightbox/jquery.lightbox.js"></script>
+<script src="__JS__/common.js"></script>
+
+<script src="__JS__/Theme.js"></script>
+<block name="script"></block>
+</body>
+</html>

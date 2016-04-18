@@ -1,0 +1,114 @@
+[ 2016-04-06T20:57:10+08:00 ] ::1 /bysj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 589 行.
+NOTIC: [8] Undefined offset: 1 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+
+[ 2016-04-06T20:58:28+08:00 ] ::1 /bysj/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-06T20:58:28+08:00 ] ::1 /bysj/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-06T20:58:34+08:00 ] ::1 /bysj/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-06T20:58:38+08:00 ] ::1 /bysj/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-06T20:58:40+08:00 ] ::1 /bysj/index.php/Home/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-06T20:58:40+08:00 ] ::1 /bysj/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 589 行.
+NOTIC: [8] Undefined offset: 1 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+NOTIC: [8] Undefined offset: 1 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 550 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 596 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 597 行.
+NOTIC: [8] Undefined offset: 0 D:\WWW\bysj\ThinkPHP\Library\Think\Db\Driver.class.php 第 600 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AS tp_sum FROM `tp_account` LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT SUM(*) AS tp_sum FROM `tp_account` LIMIT 1  
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AS tp_sum FROM `tp_account` LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT SUM(*) AS tp_sum FROM `tp_account` LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

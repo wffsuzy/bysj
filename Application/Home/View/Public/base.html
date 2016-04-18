@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="__CSS__/application.css">
+<script src="__JS__/jquery-1.7.2.min.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+</head>
+<style>
+	img{
+	width:200px;
+	height:32px;
+	}
+</style>
+<block name="style"></block>
+<body>
+	<div id="wrap">
+		<div id="topbar">
+			<div class="container">
+				<div id="top-nav">
+					<ul>
+						<li><?php echo date('Y年m月d日',time())?></li>
+					</ul>
+					<ul class="pull-right">
+						<li><a href="javascript:;"><i class="icon-user"></i>&nbsp;{$admin_info['username']}</a></li>
+				<li><a href="{:U(MODULE_NAME . '/Public/logout')}">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="header">
+			<div class="container">
+			<a href="{:U(MODULE_NAME . '/Index/index')}" class="brand">LOGO</a>
+		<a href="javascript:;" class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        	<i class="icon-reorder"></i>
+      	</a>
+				<div class="nav-collapse">
+					<ul id="main-nav" class="nav pull-right">
+						<li class="nav-icon <?php if($index) echo 'active';?>">
+							<a href="{:U(MODULE_NAME . '/Index/index')}">
+							<i class="icon-home"></i>
+							<span>首页</span>        					
+							</a>
+						</li>
+						<volist name="menu" id='vo'>
+							<li class="nav-icon <?php if($vo['active']) echo 'active1';?>"">
+									<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                           			 <i class="icon-th"></i>
+                            		<span>{$vo.title}</span>
+                            		<b class="caret"></b>
+                        			</a>
+                        			<ul class="dropdown-menu">
+										<volist name="vo['child']" id="vv">
+									 <li><a tabindex="-1" href="{$vv['url']|U}">{$vv.title}</a></li>
+							  		  </volist>
+									</ul>
+							</li>
+							
+						</volist>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<block name="content"></block>
+	</div>
+</body>
+</html>
